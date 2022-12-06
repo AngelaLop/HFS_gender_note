@@ -813,8 +813,10 @@ g percep_inseg_violencia =.
 g aumento_v14_05 =.
 g aumento_v14_06 =. 
 *----------2.4: Food insecurity 
-g run_out_food = (u04_01==1)
-g run_out_food_pre_pan = (u04_04==1)
+cap g run_out_food = .
+cap replace run_out_food = (u04_01==1)
+cap g run_out_food_pre_pan = .
+cap replace run_out_food_pre_pan = (u04_04==1)
 }
 *----------2.5: Education
 quiet{

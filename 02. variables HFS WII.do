@@ -998,6 +998,9 @@ label val learning_same yn
 	replace mixto1 = 1 if inlist(v08_03b,59302)
 	replace mixto1 = 0 if inlist(v08_03b,59301,59303,59304)
 
+	cap g run_out_food = (v04_01==1)
+cap g run_out_food_pre_pan = (v04_04==1)
+	
 *----------2.6: Gender
 
 gen lost =. 
